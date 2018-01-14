@@ -1,0 +1,44 @@
+68583:46 compiler
+47:46 baseLibrary
+94:39 juniversalchardet
+134:46 adapters
+181:46 library
+228:46 kotlin-stdlib-jre7
+275:46 kotlin-reflect
+322:46 tedpermission-rx2
+369:46 tedpermission
+416:46 appcompat-v7
+463:47 play-services-oss-licenses
+511:47 play-services-basement
+559:46 support-v4
+606:46 support-media-compat
+653:46 support-fragment
+700:46 support-core-utils
+747:46 animated-vector-drawable
+794:46 support-core-ui
+841:46 support-vector-drawable
+888:46 support-compat
+935:46 runtime
+982:46 rxjava
+1029:46 kotlin-stdlib
+1123:46 common
+1170:46 support-annotations
+1217:49 reactive-streams
+1267:1558 RE2
+2826:1732 Protobuf Nano
+4559:1481 darts_clone
+6041:3182 PCRE
+9224:2500 zlib
+11725:11358 CCTZ
+23084:19442 ICU4C
+42527:243 tz database
+42771:1602 JSR 305
+44374:731 UTF
+45106:680 STL
+45787:11358 safeparcel
+57146:11342 flatbuffers
+68489:46 annotations
+68536:46 kotlin-annotation-processing-gradle
+68630:46 kotlin-compiler-embeddable
+68677:46 javapoet
+68724:46 kotlin-script-runtime
