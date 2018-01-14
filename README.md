@@ -1,9 +1,17 @@
 # Kamera
 
-Sample Android app for showcasing custom implementation of camera preview display, written in Kotlin.
-This is inspired by [TextureFromCameraActivity](https://github.com/google/grafika/blob/master/app/src/main/java/com/android/grafika/TextureFromCameraActivity.java) in Grafika repository.
+Sample Android app for showcasing custom implementation of OpenGL camera preview display, written in Kotlin.
 
-Main goals of design :
+## Main Implementation
+- [KameraPreviewObserver.kt](https://github.com/trent-dev/Kamera/blob/master/app/src/main/java/com/trent/kamera/kamera/KameraPreviewObserver.kt)
+- [KameraActivity.kt](https://github.com/trent-dev/Kamera/blob/master/app/src/main/java/com/trent/kamera/kamera/KameraActivity.kt)
+- [CameraExtensions.kt](https://github.com/trent-dev/Kamera/blob/master/app/src/main/java/com/trent/kamera/extensions/CameraExtensions.kt)
+- [Shader.kt](https://github.com/trent-dev/Kamera/blob/master/app/src/main/java/com/trent/kamera/gles/shader/Shader.kt)
+- [GraphicTypes.kt](https://github.com/trent-dev/Kamera/blob/master/app/src/main/java/com/trent/kamera/customtypes/GraphicTypes.kt)
+
+Structure inspired by `TextureFromCameraActivity` in [Grafika](https://github.com/google/grafika) repository.
+
+## Design Goals
 
 1.   **Stay as close to idiomatic Kotlin as possible.**
 
@@ -13,15 +21,15 @@ Main goals of design :
 
 2.   **Reduce complexity using single Executor & single Class.**
 
-     I intentionally designed main class to be flat, to avoid complexity caused by Handlers & RenderThreads.
-     A single Executor replaces most of their functionality.
+     I intentionally designed main class to be flat, to avoid complexity caused by `Handler`s & `RenderThread`s.
+     A single `Executor` replaces most of their functionality.
 
 3.   **Handle all state machines in a separate non-Activity class.**
 
      Activity lifecycle & Surface lifecycle doesn't match, so there is a need to account for both of them.
-     I do this using Android Architecture Components LifecycleObserver, to handle all in one single class.
+     I do this using Android Architecture Components `LifecycleObserver`, to handle all in one single class.
      Grafika implementation handled all this in one Activity, which is fine for a sample app, but lacks extensibility.
 
 4.   **Overcome possible thread problems using Annotations.**
 
-     @WorkerThread, @MainThread annotations are strategically placed to avoid GL operations on wrong threads.
+     `@WorkerThread`, `@MainThread` annotations are strategically placed to avoid GL operations on wrong threads.
