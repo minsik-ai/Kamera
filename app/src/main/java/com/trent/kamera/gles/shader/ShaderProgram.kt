@@ -16,7 +16,7 @@
 /**
  * Ported to Kotlin & modified & extended for Kamera
  *
- * @author Trent Oh(devtrentoh@gmail.com)
+
  */
 package com.trent.kamera.gles.shader
 

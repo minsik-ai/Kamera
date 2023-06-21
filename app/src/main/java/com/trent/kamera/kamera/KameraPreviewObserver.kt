@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Trent Oh(devtrentoh@gmail.com)
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -64,7 +64,7 @@ import java.util.concurrent.Executors
  * 4.   Overcome possible thread problems using Annotations.
  *      @WorkerThread, @MainThread annotations are strategically placed to avoid GL operations on wrong threads.
  *
- * @author Trent Oh(devtrentoh@gmail.com)
+
  */
 internal class KameraPreviewObserver(private val surfaceView: SurfaceView, private val deviceRotation: Int) :
         LifecycleObserver, SurfaceHolder.Callback, SurfaceTexture.OnFrameAvailableListener {

@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Trent Oh(devtrentoh@gmail.com)
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.activity_kamera.*
  * Activity for showing Camera Preview.
  * Needs Camera permission.
  *
- * @author Trent Oh(devtrentoh@gmail.com)
+
  */
 class KameraActivity : AppCompatActivity() {
 

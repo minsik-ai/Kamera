@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Trent Oh(devtrentoh@gmail.com)
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package com.trent.kamera.customtypes
 /**
  * Data classes for type-safe handling of graphic related data.
  *
- * @author Trent Oh(devtrentoh@gmail.com)
+
  */
 
 data class Dimens(val width: Int, val height: Int) {

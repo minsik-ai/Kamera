@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Trent Oh(devtrentoh@gmail.com)
+
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import com.trent.kamera.gles.shader.GLSLVars.vTextureCoord
  * Shaders for OpenGL drawing.
  * Uses Kotlin's String Templates for readability.
  *
- * @author Trent Oh(devtrentoh@gmail.com)
+
  */
 internal object GLSLVars {
 
